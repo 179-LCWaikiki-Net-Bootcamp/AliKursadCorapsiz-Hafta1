@@ -6,7 +6,7 @@ namespace ExampleWebAPI.DTOs
     public class ProductAddDto
     {
         [Display(Name = "Ürün Adı")]
-        [Required(ErrorMessage = "{0} is required!")]
+        [Required(ErrorMessage = "{0} girilmesi zorunludur!")]
         [MaxLength(20, ErrorMessage = "{0} {1} karakterden büyük olamaz.")]
         [MinLength(3, ErrorMessage = "{0} {1} karakterden küçük olamaz.")]
         public string Name { get; set; }
